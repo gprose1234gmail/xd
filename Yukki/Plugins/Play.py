@@ -63,7 +63,7 @@ async def play(_, message: Message):
     url = get_url(message)
     if audio:
         mystic = await message.reply_text(
-            "🔄 Processing Audio... Please Wait!"
+            "🔄 Processing Audio... PyTgMusic!"
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
@@ -124,7 +124,7 @@ async def play(_, message: Message):
                     "Sorry! Bot only allows limited number of video calls due to CPU overload issues. Many other chats are using video call right now. Try switching to audio or try again later"
                 )
         mystic = await message.reply_text(
-            "🔄 Processing Video... Please Wait!"
+            "🔄 Processing Video... PyTgMusic!"
         )
         try:
             read = db_mem[message.chat.id]["live_check"]
@@ -148,10 +148,10 @@ async def play(_, message: Message):
             return await message.reply_photo(
                 photo="Utils/spotify.png",
                 caption=(
-                    "**Usage:**\n /spotify [Spotify Track Or Playlist Or Album Or Artist Link]\n\n➤ **Playing limit is 20 songs for playlists and albums** [[What is this ?](https://t.me/TechZBots/71)]"
+                    "**Usage:**\n /spotify [Spotify Track Or Playlist Or Album Or Artist Link]\n\n➤ **Playing limit is 20 songs for playlists and albums** [[What is this ?](https://t.me/tgcalls_Music_update/64)]"
                 ),
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="🔄 Close", callback_data="close_btn"),]]))             
-        mystic = await message.reply_text("🔄 Processing URL... Please Wait!")
+        mystic = await message.reply_text("🔄 Processing URL... PyTgSpotify!")
         if not message.reply_to_message:
             query = message.text.split(None, 1)[1]
         else:
@@ -167,7 +167,7 @@ async def play(_, message: Message):
         buttons = url_markup2(videoid, duration_min, message.from_user.id)
         return await message.reply_photo(
             photo=thumb,
-            caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__",
+            caption=f"📎Title: **{title}\n\n⏳Duration:** {duration_min} Mins\n\n__[Get Additional Information About Video](https://t.me/{BOT_USERNAME}?start=info_{videoid})__\n\n powerby: PyTgSpotify",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -183,7 +183,7 @@ async def play(_, message: Message):
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
             return
-        mystic = await message.reply_text("🔍 **Searching**...")
+        mystic = await message.reply_text("🔍 **Searching PyTgMusic**...")
         query = message.text.split(None, 1)[1]
         (
             title,
