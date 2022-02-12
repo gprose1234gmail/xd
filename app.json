@@ -96,11 +96,7 @@
       "description": "The user id(s) of user(s) whom you would like to add as a SUDO. Multiple values shall be seperated with a space.",
       "value": "",
       "required": true
-    },
-    "THUMB_LINK": {
-      "description": "Telegraph image link of a image which you want to set as thumbnail.",
-      "value": "https://telegra.ph/file/e17f42bc195635b668d6d.jpg",
-      "required": true
+    
     },
     "BOT_USERNAME": {
       "description": "Your bot's username.",
