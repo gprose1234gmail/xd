@@ -26,7 +26,7 @@ UPSTREAM_BRANCH = "main"
 SUPPORT_CHANNEL = "t.me/tgcalls_Music_upadte"
 SUPPORT_GROUP = "t.me/tgcalls_MusicXchat"
 
-THUMBNAIL = getenv("THUMB_LINK") 
+THUMBNAIL = "https://telegra.ph/file/9dbfbbf6cc6f70a9a1adf.jpg"
 
 botusername = str(getenv("BOT_USERNAME"))
 
