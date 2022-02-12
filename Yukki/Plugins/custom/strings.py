@@ -28,10 +28,10 @@ START_BUTTON_GROUP = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="📣 Updates Channel", url="https://t.me/TechZBots"
+                text="📣 Updates Channel", url="https://t.me/tgcalls_Music_upadte"
             ),
             InlineKeyboardButton(
-                text="💬 Support Group", url="https://t.me/TechZBots_Support"
+                text="💬 Support Group", url="https://t.me/tgCalls_MusicxChat"
             ),                       
         ],        
     ]
@@ -50,10 +50,10 @@ START_BUTTON_PRIVATE = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                text="📣 Updates Channel", url="https://t.me/TechZBots"
+                text="📣 Updates Channel", url="https://t.me/tgcalls_Music_update"
             ),
             InlineKeyboardButton(
-                text="💬 Support Group", url="https://t.me/TechZBots_Support"
+                text="💬 Support Group", url="https://t.me/tgcalls_MusicXchat"
             ),                       
         ],        
     ]
@@ -280,7 +280,7 @@ BASIC_TEXT = """
 /help - get help message
 /play - play songs or videos in vc
 /mplay - play songs directly in vc
-/vplay - play videos directly in vc
+/vplay - play videos directly in vc\n/spotify - [`spotify playlist link`]
 /lyrics - get lyrics of song
 /ping - ping the bot
 /playlist - play your playlist
