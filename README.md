@@ -1,18 +1,10 @@
 <h3>⚠️ This repo is just a clone of <a href="https://github.com/NotReallyShikhar/YukkiMusicBot">YukkiMusicBot</a>. All credits goes to devs of <a href="https://github.com/NotReallyShikhar/YukkiMusicBot/graphs/contributors">YukkiMusicBot</a>.</h3>
 
-<p align="center"><img src="https://telegra.ph/file/e17f42bc195635b668d6d.jpg" alt="ICON" width="80%"/></p>
 
-<h4 align="center">
-    A Telegram Music+video Bot written in Python using Pyrogram and Py-Tgcalls 
-</h4>
-<p align="center">
-    <a href="https://t.me/SiestaXMusicBot"> Ready-To-Use Bot </a> •
-    <a href="https://notreallyshikhar.gitbook.io/yukkimusicbot/about/getting-started"> Documentation </a> •
-    <a href="https://t.me/TechZBots"> Support Channel </a> •
-    <a href="https://t.me/TechZBots_Support"> Support Chat </a> 
-</p>
+
+
     
-# SiestaXMusic
+# PyTgMusic
 A Powerful Telegram Music+Video Bot by which you can stream songs, videos and even live streams in your group calls via various sources. It comes with  user friendly and easy to use yet elegant features.
 
 ## Deployment
@@ -67,7 +59,7 @@ Read [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/require
 
 
 ```console
-shikhar@MacBook~ $ git clone https://github.com/TechShreyash/SiestaXMusic
+shikhar@MacBook~ $ git clone https://github.com/TheProgramerkitty/PytgSpotify
 shikhar@MacBook~ $ cd SiestaXMusic
 shikhar@MacBook~ $ pip3 install -U -r requirements.txt
 shikhar@MacBook~ $ cp sample.env .env
@@ -86,11 +78,8 @@ shikhar@MacBook~ $ bash start
 - Checkout Only [Mandatory Vars](https://notreallyshikhar.gitbook.io/yukkimusicbot/vars/mandatory-vars)
 - Checkout Some [Configs](https://notreallyshikhar.gitbook.io/yukkimusicbot/setup-config/config)
 
-## Contact & Support
 
-- [Telegram Channel](https://t.me/TechZBots)
-- [Telegram Support Group](https://t.me/TechZBots_Support)
-- [Contact Owner](https://t.me/Tech_Shreyash)
+
 
 
 ## License
