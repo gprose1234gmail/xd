@@ -16,7 +16,7 @@ def changeImageSize(maxWidth, maxHeight, image):
     return newImage
 
 
-async def gen_thumb(userid, theme, ctitle):
+async def gen_thumb(thumbnail, title, userid, theme, ctitle):
     async with aiohttp.ClientSession() as session:
         async with session.get(thumbnail) as resp:
             if resp.status == 200:
@@ -32,8 +32,32 @@ async def gen_thumb(userid, theme, ctitle):
     Image.alpha_composite(image5, image6).save(f"cache/temp{userid}.png")
     img = Image.open(f"cache/temp{userid}.png")
     draw = ImageDraw.Draw(img)
+    font = ImageFont.truetype("Utils/finalfont.ttf", 85)
+    font2 = ImageFont.truetype("Utils/finalfont.ttf", 60)
+    draw.text(
+        (20, 45),
+        f"Playing on: {ctitle[:14]}...",
+        fill="white",
+        stroke_width=1,
+        stroke_fill="white",
+        font=font2,
+    )
+    draw.text(
+        (25, 595),
+        f"{title[:27]}...",
+        fill="white",
+        stroke_width=2,
+        stroke_fill="white",
+        font=font,
+    )
     img.save(f"cache/final{userid}.png")
     os.remove(f"cache/temp{userid}.png")
     os.remove(f"cache/thumb{userid}.jpg")
     final = f"cache/final{userid}.png"
     return final
+
+
+
+
+
+
