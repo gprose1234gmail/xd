@@ -24,7 +24,7 @@ async def gen_thumb(thumbnail, title, userid, theme, ctitle):
                 await f.write(await resp.read())
                 await f.close()
     image1 = Image.open(f"cache/thumb{userid}.jpg")
-    image2 = Image.open(f"Utils/attitude.PNG")
+    image2 = Image.open(f"1644742397060.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
