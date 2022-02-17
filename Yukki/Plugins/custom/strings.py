@@ -3,17 +3,17 @@ from Yukki import BOT_NAME, BOT_USERNAME
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 START_TEXT = f"""
-✨ **Hello MENTION !**
+✨ **ʜᴇʟʟᴏ MENTION !**
 
-**You can use [{BOT_NAME}](https://t.me/{BOT_USERNAME}) to play Music or Videos in your Group Video Chat.**
+ʏᴏᴜ ᴄᴀɴ ᴜsᴇ [{BOT_NAME}](https://t.me/{BOT_USERNAME}) ᴛᴏ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴏʀ ᴠɪᴅᴇᴏs ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ.
 
-💡 **Find out all the Bot's commands and how they work by clicking on the ➤ 📚 Commands button**
+💡 **ꜰɪɴᴅ ᴏᴜᴛ ᴀʟʟ ᴛʜᴇ ʙᴏᴛ's ᴄᴏᴍᴍᴀɴᴅs ᴀɴᴅ ʜᴏᴡ ᴛʜᴇʏ ᴡᴏʀᴋ ʙʏ ᴄʟɪᴄᴋɪɴɢ ᴏɴ ᴛʜᴇ ➤ 📚 ᴄᴏᴍᴍᴀɴᴅs ʙᴜᴛᴛᴏɴ**
 """
 
 COMMANDS_TEXT = f"""
-✨ **Hello MENTION !**
+✨ **ʜᴇʟʟᴏ MENTION !**
 
-**Click on the buttons below to know my commands.**
+**ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs.**
 """
 
 START_BUTTON_GROUP = InlineKeyboardMarkup(
