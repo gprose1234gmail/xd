@@ -4,15 +4,12 @@ from pyrogram import filters
 from Yukki.Plugins.custom.strings import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-async def start_menu_private(message):
-    mention = "[" + message.from_user.first_name + "](tg://user?id=" + str(message.from_user.id) + ")"
-    text = START_TEXT.replace("MENTION",mention)
-    await message.reply_photo(photo=THUMBNAIL,caption=text,reply_markup=START_BUTTON_PRIVATE,parse_mode="markdown")
-
 async def start_menu_group(message):
     mention = "[" + message.from_user.first_name + "](tg://user?id=" + str(message.from_user.id) + ")"
     text = START_TEXT.replace("MENTION",mention)
     await message.reply_photo(photo=THUMBNAIL,caption=text,reply_markup=START_BUTTON_GROUP,parse_mode="markdown")
+
+
 
 @app.on_callback_query(filters.regex("advanced_cmd"))
 async def commands_menu(_, query):
@@ -54,8 +51,7 @@ async def open_start_menu(_, query):
         button = START_BUTTON_GROUP
     elif query.message.chat.type == "supergroup":
         button = START_BUTTON_GROUP
-    elif query.message.chat.type == "private":
-        button = START_BUTTON_PRIVATE
+    
 
     mention = "[" + query.from_user.first_name + "](tg://user?id=" + str(query.from_user.id) + ")"
     text = START_TEXT.replace("MENTION",mention)
