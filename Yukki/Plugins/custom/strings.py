@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 START_TEXT = f"""
 ✨ **Hello MENTION !**
 
-**You can use [{BOT_NAME}](https://t.me/{BOT_USERNAME}) to play Music or Videos in your Group Video Chat.**
+**You can uyayhahwhhwse [{BOT_NAME}](https://t.me/{BOT_USERNAME}) to play Music or Videos in your Group Video Chat.**
 
 💡 **Find out all the Bot's commands and how they work by clicking on the ➤ 📚 Commands button**
 """
